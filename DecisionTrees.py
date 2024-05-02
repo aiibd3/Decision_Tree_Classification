@@ -107,10 +107,10 @@ def main():
             f"{split_ratio * 100:.0f}-{(1 - split_ratio) * 100:.0f}             "
             f"{np.mean(accs):.4f}          "
             f"{np.max(accs):.4f}          "
-            f"{np.min(accs):.4f}            "
-            f"{np.mean(sizes)}           "
-            f"{np.max(sizes)}              "
-            f"{np.min(sizes)}")
+            f"{np.min(accs):.4f}           "
+            f"{np.mean(sizes):.4f}         "
+            f"{np.max(sizes):.4f}          "
+            f"{np.min(sizes):.4f}")
 
     # Plot mean accuracy and mean number of nodes in the final tree against training set size
     plot_results(split_ratios, results_acc, "Mean Accuracy", "Mean Accuracy vs. Training Set Size")

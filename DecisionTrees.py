@@ -69,8 +69,8 @@ def main():
         mean_acc, max_acc, min_acc, mean_size, max_size, min_size = run_experiment(features, targets, split_ratio=0.25,
                                                                                    random_state=i)
         print(f"Experiment {i + 1}:")
-        print(f"Accuracy - Mean: {mean_acc:.4f}, Max: {max_acc:.4f}, Min: {min_acc:.4f}")
-        print(f"Tree Size - Mean: {mean_size}, Max: {max_size}, Min: {min_size}")
+        print(f"Accuracy : {mean_acc}")
+        print(f"Tree Size :{mean_size}")
         print()
 
     # Experiment 2: Different range of train_test split ratio
@@ -119,6 +119,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-    
-    

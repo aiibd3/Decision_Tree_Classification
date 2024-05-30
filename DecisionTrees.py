@@ -34,15 +34,23 @@ def run_experiment(features, targets, split_ratio, random_state=None):
                                                                                       random_state=random_state)
 
         # Initializing the decision tree classifier
-        classifier = DecisionTreeClassifier()  # Using entropy as the criterion
+        # Using entropy as the criterion
+        # split features and targets
+        classifier = DecisionTreeClassifier()
+
         # Training the classifier
         classifier.fit(features_train, targets_train)
+
         # Calculating accuracy on the testing set
+        # Prediction
         accuracy = classifier.score(features_test, targets_test)
+
         # Storing accuracy
         accuracies.append(accuracy)
+
         # Calculating the size of the decision tree
         tree_size = classifier.tree_.node_count
+
         # Storing the size of the decision tree
         tree_sizes.append(tree_size)
 
@@ -98,6 +106,7 @@ def main():
             # print(split_ratio)
             accs.append(mean_acc)
             sizes.append(mean_size)
+
         results_acc.append(np.mean(accs))
         results_size.append(np.mean(sizes))
 

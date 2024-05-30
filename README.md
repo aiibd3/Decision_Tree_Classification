@@ -1,4 +1,5 @@
-Decision Trees using Scikit-learn:
+-Decision Trees using Scikit-learn:
+
 Use the Banknote Authentication data attached with the assignment to
 implement the following requirements:
 1. Experiment with a fixed train_test split ratio: Use 25% of the samples for
@@ -19,7 +20,8 @@ set size.
 
 Note: the size of the tree is number of its nodes.
 
-KNN:
+-KNN:
+
 Use the Banknote Authentication data to implement your own simple KNN
 classifier using python, (Don’t use any built-in functions):
 1. Divide your data into 70% for training and 30% for testing.

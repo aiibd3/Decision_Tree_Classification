@@ -1,4 +1,4 @@
--Decision Trees using Scikit-learn:
+- Decision Trees using Scikit-learn:
 
 Use the Banknote Authentication data attached with the assignment to
 implement the following requirements:
@@ -20,7 +20,7 @@ set size.
 
 Note: the size of the tree is number of its nodes.
 
--KNN:
+- KNN:
 
 Use the Banknote Authentication data to implement your own simple KNN
 classifier using python, (Don’t use any built-in functions):
